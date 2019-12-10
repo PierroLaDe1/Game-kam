@@ -79,8 +79,28 @@ public class PlayerWeaponsManager : MonoBehaviour
     WeaponSwitchState m_WeaponSwitchState;
     int m_WeaponSwitchNewWeaponIndex;
 
-    
-        
+    private void Start()
+    {
+        activeWeaponIndex = -1;
+        m_WeaponSwitchState = WeaponSwitchState.Down;
+
+        m_InputHandler = GetComponent<PlayerInputHandler>();
+        DebugUtility.HandleErrorIfNullGetComponent<PlayerInputHandler, PlayerWeaponsManager>(m_InputHandler, this, gameObject);
+
+        m_PlayerCharacterController = GetComponent<PlayerCharacterController>();
+        DebugUtility.HandleErrorIfNullGetComponent<PlayerCharacterController, PlayerWeaponsManager>(m_PlayerCharacterController, this, gameObject);
+
+        SetFOV(defaultFOV);
+
+        onSwitchedToWeapon += OnWeaponSwitched;
+
+        // Add starting weapons
+        foreach (var weapon in startingWeapons)
+        {
+            AddWeapon(weapon);
+        }
+        SwitchWeapon(true);
+    }
 
     private void Update()
     {
