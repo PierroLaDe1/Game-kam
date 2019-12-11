@@ -172,7 +172,7 @@ public class EnemyController : MonoBehaviour
         HandleTargetDetection();
 
         Color currentColor = onHitBodyGradient.Evaluate((Time.time - m_LastTimeDamaged) / flashOnHitDuration);
-        m_BodyFlashMaterialPropertyBlock.SetColor("_EmissionColor", currentColor);
+       // m_BodyFlashMaterialPropertyBlock.SetColor("_EmissionColor", currentColor);
         foreach (var data in m_BodyRenderers)
         {
             data.renderer.SetPropertyBlock(m_BodyFlashMaterialPropertyBlock, data.materialIndex);
@@ -194,7 +194,7 @@ public class EnemyController : MonoBehaviour
     void HandleTargetDetection()
     {
         // Handle known target detection timeout
-        if (knownDetectedTarget && !isSeeingTarget && (Time.time - m_TimeLastSeenTarget) > knownTargetTimeout)
+       /* if (knownDetectedTarget && !isSeeingTarget && (Time.time - m_TimeLastSeenTarget) > knownTargetTimeout)
         {
             knownDetectedTarget = null;
         }
@@ -266,6 +266,7 @@ public class EnemyController : MonoBehaviour
 
         // Remember if we already knew a target (for next frame)
         hadKnownTarget = knownDetectedTarget != null;
+        */
     }
 
     public void OrientTowards(Vector3 lookPosition)
