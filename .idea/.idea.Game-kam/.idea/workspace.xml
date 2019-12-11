@@ -15,6 +15,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/FPS/Scripts/target.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FPS/Scripts/PlayerWeaponsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FPS/Scripts/PlayerInputHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FPS/Scripts/ProjectileStandard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FPS/Scripts/WeaponController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -78,7 +80,8 @@
       <option name="presentableId" value="Default" />
       <updated>1575983865954</updated>
       <workItem from="1575983877438" duration="1715000" />
-      <workItem from="1575990102254" duration="4968000" />
+      <workItem from="1575995896784" duration="172000" />
+      <workItem from="1576053363522" duration="70000" />
     </task>
     <servers />
   </component>
