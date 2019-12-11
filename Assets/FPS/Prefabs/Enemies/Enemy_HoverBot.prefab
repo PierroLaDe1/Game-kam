@@ -149,7 +149,7 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   flashOnHitDuration: 0.2
-  damageTick: {fileID: 8300000, guid: a7fae22399a6e1d448dc0dd2210f1dac, type: 3}
+  damageTick: {fileID: 8300000, guid: 676e749624765df488ecefa7e1d14513, type: 3}
   deathVFX: {fileID: 8950624839484268180, guid: 2a8f5052fe50f7b41b17149abb0f7414,
     type: 3}
   deathVFXSpawnPoint: {fileID: 381893446485871685}
