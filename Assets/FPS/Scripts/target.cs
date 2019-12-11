@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
@@ -13,9 +14,10 @@ public class target : MonoBehaviour
     }
 
     Vector3 vectorDirection = new Vector3(0f, 0f, 1f);
+
     void LaunchProjectile()
-    { 
-      if (Physics.Raycast(transform.position, vectorDirection, 2f, LayerMask.GetMask("Well")))
+    {
+        if (Physics.Raycast(transform.position, vectorDirection, 2f, LayerMask.GetMask("Well")))
         {
             vectorDirection = -vectorDirection;
         }
@@ -24,4 +26,13 @@ public class target : MonoBehaviour
             transform.position += vectorDirection;
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+    }
+
+    //start is called before the first frame update
+
 }
+
