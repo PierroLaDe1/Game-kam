@@ -29,10 +29,19 @@ public class target : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        Invoke("apparaitre", 1.5f);
+
     }
 
-    //start is called before the first frame update
+    private void apparaitre()
+    {
+        gameObject.SetActive(true);
+    }
 
+//start is called before the first frame update
+    void Update()
+    { 
+    }
 }
 
