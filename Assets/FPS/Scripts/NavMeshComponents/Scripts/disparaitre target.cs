@@ -10,7 +10,6 @@ public class disparaitretarget : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
-        Destroy();
     }
 
     // Start is called before the first frame update
