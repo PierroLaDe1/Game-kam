@@ -354,6 +354,8 @@ public class EnemyController : MonoBehaviour
 
     void OnDamaged(float damage, GameObject damageSource)
     {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Violence");
+        /*
         // test if the damage source is the player
         if (damageSource && damageSource.GetComponent<PlayerCharacterController>())
         {
@@ -373,6 +375,7 @@ public class EnemyController : MonoBehaviour
 
             m_WasDamagedThisFrame = true;
         }
+        */
     }
 
     void OnDie()
