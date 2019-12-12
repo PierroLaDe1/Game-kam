@@ -119,6 +119,10 @@ public class WeaponController : MonoBehaviour
             muzzleWorldVelocity = (weaponMuzzle.position - m_LastMuzzlePosition) / Time.deltaTime;
             m_LastMuzzlePosition = weaponMuzzle.position;
         }
+        if (m_CurrentAmmo < 1f)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("LoseScene");
+        }
     }
 
     void UpdateAmmo()
