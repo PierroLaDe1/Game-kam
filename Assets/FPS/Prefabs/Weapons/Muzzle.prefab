@@ -230,9 +230,9 @@ MonoBehaviour:
   recoilForce: 1
   aimZoomRatio: 1
   aimOffset: {x: 0, y: 0, z: 0}
-  ammoReloadRate: 1
-  ammoReloadDelay: 2
-  maxAmmo: 1000000
+  ammoReloadRate: 0
+  ammoReloadDelay: 0
+  maxAmmo: 4
   maxChargeDuration: 2
   ammoUsedOnStartCharge: 1
   ammoUsageRateWhileCharging: 1

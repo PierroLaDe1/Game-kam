@@ -30,7 +30,7 @@ public class target : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         gameObject.SetActive(false);
-        Invoke("apparaitre", 2.0f);
+        Invoke("apparaitre", 100000000.0f);
 
     }
 
